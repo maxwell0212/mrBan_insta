@@ -1,3 +1,11 @@
+# git 리파지토리 연결 및 소스 가져 오기
+INSTRGRAM> git config --global user.name maxwell0212
+INSTRGRAM> git config --global user.email maxwell0212@hotmail.com
+INSTRGRAM> git init
+    Initialized empty Git repository in C:/Users/maxwe/Documents/pystudy/webStudy/MrBan_HTML_CSS/INSTRGRAM/.git/
+INSTRGRAM> git remote add origin https://github.com/maxwell0212/mrBan_insta.git
+INSTRGRAM> git pull origin master
+
 # 작업 중이던 코드 푸시하기
 git add .
 git commit -m "ver 1.0 html 뼈대"
