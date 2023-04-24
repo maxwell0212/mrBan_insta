@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato">
     <link href="css_test.css" rel="stylesheet">
 </head>
+
+<!--
 <body>
     <style>
         p { border:solid; border-color:blue; }
@@ -23,6 +25,20 @@
             font-family: "Times New Roman", Times, serif;
             text-align: center;
         }
+        img {
+            width: 100px;
+            height: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: block;
+
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
     </style>
 
     <p style="color:blue; text-decoration: underline blue;">
@@ -34,6 +50,120 @@
     <div style="font-family:Lato; text-decoration:underline overline red;">
         어떤 결과가 나올까요? div<br/>
         ABCDEF abcdef
+    </div>
+
+    <img src = "image/profile.jpg" style="border:solid; border-color:red"/><br/>
+
+    <img src="image/profile.jpg" width="30px;"/>
+    <img src="image/profile.jpg" width="30px;"/>
+</body>
+-->
+
+<!--
+<body>
+    <style>
+        #first{
+            border:solid;
+            border-width: 1px;
+            border-top-width: 1px;
+            border-left-width: 2px;
+            border-right-width: 10px;
+            border-bottom-width: 4px;
+            border-color: blue;
+        }
+        #second{
+            height:50px;
+            border:solid;
+            border-width: 3px;
+            border-top-color: red;
+            border-bottom-color: green;
+            border-left-color: yellow;
+            border-right-color: purple;
+        }
+        #third{
+            border: 5px red solid;
+            background-color: yellow;
+        }
+        #fourth{
+            border: solid blue 5px;
+            background-color: blueviolet;
+        }
+        #fifth{
+            height: 100px;
+            border: purple solid 5px;
+            border-radius: 15px;
+            background-image: url("image/profile.jpg")
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border: 5px red solid;
+            border-radius: 100px;
+        }
+        .first{
+            visibility: hidden;
+        }
+        
+    </style>
+    <p style="border: dotted">dotted</p>
+    <p style="border: dashed">dashed</p>
+    <p style="border: solid">solid</p>
+    <p style="border: double">double</p>
+    <p style="border: inset">inset</p>
+    <p style="border: outset">outset</p>
+
+    <p id="first">1px</p>
+    <p id="second">3px</p>
+    <p id="third">third</p>
+    <p id="fourth">fourth</p>
+    <p id="fifth">fifth</p>
+
+    <img src="image/profile.jpg"/>
+
+    <img class="first" src="image/profile.jpg" height=100px/>
+    <img class="second" src="image/profile.jpg" height=100px/>
+</body>
+-->
+
+<body>
+    <style>
+        .myGrid{
+            display:grid;
+            grid-template-columns: 200px 1fr;
+            
+        }
+        .myGrid2{
+            margin-top: 10px;
+            display:grid;
+            grid-template-rows: 1fr 3fr;
+        }
+        .myGrid3{
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 2fr;
+        }
+        #first {
+            background-color: yellow;
+        }
+        #second {
+            background-color: green;
+        }
+    </style>
+    <div class="myGrid">
+        <div id="first">region1</div>
+        <div id="second">region2</div>
+    </div>
+    <div class="myGrid2">
+        <div id="first">region1</div>
+        <div id="second">region2</div>
+    </div>
+    <div class="myGrid3">
+        <div id="first">region1</div>
+        <div id="second">region2</div>
+        <div id="second">region3</div>
+        <div id="first">region4</div>
+
     </div>
 
 </body>
